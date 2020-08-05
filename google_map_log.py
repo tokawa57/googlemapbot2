@@ -1,4 +1,4 @@
-api_key = "googlemapのAPIキー"
+api_key = "AIzaSyAmkaR3qqaVhq55gZnuE2DicdmzImVJZ5Y"
 
 
 import googlemaps
