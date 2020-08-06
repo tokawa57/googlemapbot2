@@ -14,7 +14,7 @@ from linebot.models import (
 import os
 
 
-api_key = "AIzaSyAmkaR3qqaVhq55gZnuE2DicdmzImVJZ5Y"
+api_key = ""
 
 import googlemaps
 import pprint # list型やdict型を見やすくprintするライブラリ
@@ -54,29 +54,6 @@ def googlemap(ss):
 
 
 
-
-"""
-s = ss.split()
-loc = s[0]
-keyword = s[1]
-radius = s[2]
-geocode_result = client.geocode(loc) # 位置情報を検索
-loc2 = geocode_result[0]['geometry']['location'] # 軽度・緯度の情報のみ取り出す
-place_result = client.places_nearby(location=loc2, radius=radius,keyword=keyword,language = "ja")
-rates = []
-for i in range(len(place_result["results"])):
-    rates.append({"name":place_result["results"][i]["name"],"rating":place_result["results"][i]["rating"]})
-
-rates_sorted = sorted(rates, key=lambda x:x['rating'],reverse=True)
-
-"""
-
-
-
-
-
-#heroku config:set YOUR_CHANNEL_SECRET="60307a5736b1a204d4af19ed3147523e" --app googlemapbot
-#heroku config:set YOUR_CHANNEL_ACCESS_TOKEN="Kox8Y5ER51xN3QeC67g6dZtsruBXydyF6TbHSDkcAkt6tzm7TugkYJBPYv92+zJFu85tGEJ1NPhasU4VwKtKv/2yFQnAQuKrkREvlS6/MQqQo2P7FoJ4d+J4RxE7WnYFOAkzsgShNUZvUNk+bvvF1AdB04t89/1O/w1cDnyilFU=" --app googlemapbot
 
 app = Flask(__name__)
 
@@ -119,15 +96,9 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=port)
 """
 
-
-
-#CS = "60307a5736b1a204d4af19ed3147523e"
-#AT = "Kox8Y5ER51xN3QeC67g6dZtsruBXydyF6TbHSDkcAkt6tzm7TugkYJBPYv92+zJFu85tGEJ1NPhasU4VwKtKv/2yFQnAQuKrkREvlS6/MQqQo2P7FoJ4d+J4RxE7WnYFOAkzsgShNUZvUNk+bvvF1AdB04t89/1O/w1cDnyilFU="
 """
 
-"""
-
-api_key = "AIzaSyAmkaR3qqaVhq55gZnuE2DicdmzImVJZ5Y"
+api_key = ""
 import googlemaps
 import pprint # list型やdict型を見やすくprintするライブラリ
 key = api_key # 上記で作成したAPIキーを入れる

@@ -12,15 +12,11 @@ from linebot.models import (
 import os
 
 
-heroku config:set YOUR_CHANNEL_SECRET="60307a5736b1a204d4af19ed3147523e" --app googlemapbot
-heroku config:set YOUR_CHANNEL_ACCESS_TOKEN="Kox8Y5ER51xN3QeC67g6dZtsruBXydyF6TbHSDkcAkt6tzm7TugkYJBPYv92+zJFu85tGEJ1NPhasU4VwKtKv/2yFQnAQuKrkREvlS6/MQqQo2P7FoJ4d+J4RxE7WnYFOAkzsgShNUZvUNk+bvvF1AdB04t89/1O/w1cDnyilFU=" --app googlemapbot
+heroku config:set YOUR_CHANNEL_SECRET="YOUR_CHANNEL_SECRET" --app googlemapbot
+heroku config:set YOUR_CHANNEL_ACCESS_TOKEN="YOUR_CHANNEL_ACCESS_TOKEN" --app googlemapbot
 
 
 app = Flask(__name__)
-
-
-CS = "60307a5736b1a204d4af19ed3147523e"
-AT = "Kox8Y5ER51xN3QeC67g6dZtsruBXydyF6TbHSDkcAkt6tzm7TugkYJBPYv92+zJFu85tGEJ1NPhasU4VwKtKv/2yFQnAQuKrkREvlS6/MQqQo2P7FoJ4d+J4RxE7WnYFOAkzsgShNUZvUNk+bvvF1AdB04t89/1O/w1cDnyilFU="
 
 
 @app.route("/callback", methods=['POST'])

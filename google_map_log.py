@@ -1,4 +1,4 @@
-api_key = "AIzaSyAmkaR3qqaVhq55gZnuE2DicdmzImVJZ5Y"
+api_key = ""
 
 
 import googlemaps
